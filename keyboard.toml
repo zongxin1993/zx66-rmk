@@ -1,6 +1,5 @@
-# Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
-name = "ZX RMK Keyboard"
+name = "ZX66 RMK Keyboard"
 product_name = "ZX RMK Keyboard"
 vendor_id = 0xFEED
 product_id = 0x9527
@@ -10,6 +9,10 @@ chip = "nrf52840"
 [split]
 connection = "ble"
 
+[storage]
+enabled = true
+clear_storage = true
+
 
 [layout]
 rows = 5
@@ -17,27 +20,27 @@ cols = 15
 layers = 3
 keymap = [
     [
-        ["Escape",    "Kc1",  "Kc2",    "Kc3",   "Kc4",   "Kc5", "Kc6",     "_",   "Kc7",   "Kc8",   "Kc9",     "Kc0",       "Minus",        "Equal",         "Backspace" ],
-        ["Tab",       "Q",    "W",      "E",     "R",     "T",   "Y",       "_",   "U",     "I",     "O",       "P",         "LeftBracket",  "RightBracket",  "Backslash" ],
-        ["CapsLock",  "A",    "S",      "D",     "F",     "G",   "_",       "H",   "J",     "K",     "L",       "Semicolon", "Quote",        "Enter",         "_"         ],
-        ["LShift",    "Z",    "X",      "C",     "V",     "B",   "_",       "N",   "M",     "Comma", "Dot",     "Slash",     "RShift",       "Up",            "_"         ],
-        ["LCtrl",     "LGui", "MO(1)",  "LAlt",  "Space", "_",   "_",       "_",   "MO(2)", "_",     "PageUp",  "PageDown",  "Left",         "Down",          "Right"     ],    
+        ["Escape",    "Kc1",  "Kc2",    "Kc3",   "Kc4",   "Kc5", "Kc6",      "No",   "Kc7",   "Kc8",   "Kc9",     "Kc0",       "Minus",        "Equal",         "Backspace" ],
+        ["Tab",       "Q",    "W",      "E",     "R",     "T",   "Y",        "No",   "U",     "I",     "O",       "P",         "LeftBracket",  "RightBracket",  "Backslash" ],
+        ["CapsLock",  "A",    "S",      "D",     "F",     "G",   "No",       "H",    "J",     "K",     "L",       "Semicolon", "Quote",        "Enter",         "No"         ],
+        ["LShift",    "Z",    "X",      "C",     "V",     "B",   "No",       "N",    "M",     "Comma", "Dot",     "Slash",     "RShift",       "Up",            "Home"      ],
+        ["LCtrl",     "LGui", "MO(1)",  "LAlt",  "Space", "No",  "No",       "No",   "MO(2)", "No",    "PageUp",  "PageDown",  "Left",         "Down",          "Right"     ],    
     ],
 
     [
-        ["Delete",    "F1",  "F2", "F3",   "F4",   "F5", "F6",            "_",     "F7",   "F8",   "F9",     "F10",       "F11",        "F12",         "Backspace"],
-        ["Tab",       "_",    "_",   "_",     "_",     "_",   "_",            "_",     "_",     "_",     "_",       "_",         "LeftBracket",  "RightBracket",  "Backslash"],
-        ["CapsLock",   "_",    "_",   "_",     "_",     "_",   "_",        "_",      "_",     "_",     "_",       "Semicolon", "Quote",        "Enter",          "_"],
-        ["LShift",    "_",    "_",   "_",     "_",     "_",   "_",             "_",      "_",     "Comma", "Dot",  "Slash",     "RShift",         "Up",             "_"],
-        ["LCtrl",     "LGui", "MO(1)",   "LAlt",  "Space", "_",   "_",       "_",    "MO(2)",     "_",     "Home",       "End",         "Left",         "Down",           "Right"],      
+        ["Delete",    "F1",  "F2", "F3",   "F4",   "F5", "F6",            "No",     "F7",   "F8",   "F9",     "F10",       "F11",        "F12",         "Backspace"],
+        ["Tab",       "_",    "_",   "_",     "_",     "_",   "No",            "No",     "_",     "_",     "_",       "_",         "LeftBracket",  "RightBracket",  "Backslash"],
+        ["CapsLock",   "_",    "_",   "_",     "_",     "_",   "No",        "_",      "_",     "_",     "_",       "Semicolon", "Quote",        "Enter",          "No"],
+        ["LShift",    "_",    "_",   "_",     "_",     "_",   "No",             "_",      "_",     "Comma", "Dot",  "Slash",     "RShift",         "Up",             "End"],
+        ["LCtrl",     "LGui", "MO(1)",   "LAlt",  "Space", "_",   "No",       "No",    "MO(2)",     "No",     "Home",       "End",         "Left",         "Down",           "Right"],      
     ],
 
     [
-        ["Escape",    "User0",  "User1", "User2",   "User3",   "User4", "User5",            "_",     "_",   "_",   "_",     "_",       "_",        "_",         "Delete"],
-        ["Tab",       "_",    "_",   "_",     "_",     "_",   "_",            "_",     "_",     "_",     "_",       "_",         "LeftBracket",  "RightBracket",  "Backslash"],
-        ["CapsLock",   "_",    "_",   "_",     "_",     "_",   "_",        "_",      "_",     "_",     "_",       "Semicolon", "Quote",        "Enter",          "_"],
-        ["LShift",    "_",    "_",   "_",     "_",     "_",   "_",             "_",      "_",     "Comma", "Dot",  "Slash",     "RShift",         "Up",             "_"],
-        ["LCtrl",     "LGui", "MO(1)",   "LAlt",  "Space", "_",   "_",       "_",    "MO(2)",     "_",     "Home",       "End",         "Left",         "Down",           "Right"],      
+        ["Escape",    "User0",  "User1", "User2",   "User3",   "User4", "User5",            "No",     "_",   "_",   "_",     "_",       "_",        "_",         "Delete"],
+        ["Tab",       "_",    "_",   "_",     "_",     "_",   "_",            "_",     "No",     "_",     "_",       "_",         "LeftBracket",  "RightBracket",  "Backslash"],
+        ["CapsLock",   "_",    "_",   "_",     "_",     "_",   "_",        "No",      "_",     "_",     "_",       "Semicolon", "Quote",        "Enter",          "No"],
+        ["LShift",    "_",    "_",   "_",     "_",     "_",   "_",             "No",      "_",     "Comma", "Dot",  "Slash",     "RShift",         "Up",             "_"],
+        ["LCtrl",     "LGui", "MO(1)",   "LAlt",  "Space", "_",   "No",       "No",    "MO(2)",     "No",     "Home",       "End",         "Left",         "Down",           "Right"],      
     ],
 ]
 
@@ -58,7 +61,6 @@ rows = 5
 cols = 8
 row_offset = 0
 col_offset = 7
-# ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 
 [split.peripheral.matrix]
 matrix_type = "normal"
