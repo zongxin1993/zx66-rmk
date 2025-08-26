@@ -14,14 +14,30 @@ connection = "ble"
 [layout]
 rows = 5
 cols = 15
-layers = 1
+layers = 3
 keymap = [
     [
         ["Escape",    "Kc1",  "Kc2", "Kc3",   "Kc4",   "Kc5", "Kc6",            "_",     "Kc7",   "Kc8",   "Kc9",     "Kc0",       "Minus",        "Equal",         "Backspace"],
         ["Tab",       "Q",    "W",   "E",     "R",     "T",   "Y",            "_",     "U",     "I",     "O",       "P",         "LeftBracket",  "RightBracket",  "Backslash"],
         ["CapsLock",   "A",    "S",   "D",     "F",     "G",   "_",        "H",      "J",     "K",     "L",       "Semicolon", "Quote",        "Enter",          "_"],
-        ["LShift",    "Z",    "X",   "C",     "V",     "B",   "_",             "N",      "M",     "Comma", "Dot",  "Slash",     "Kc1",         "Up",             "Kc1"],
-        ["LCtrl",     "LGui", "Kc1",   "LAlt",  "Space", "_",   "_",       "_",    "Kc1",     "_",     "Kc1",       "Kc1",         "Left",         "Down",           "Right"],    
+        ["LShift",    "Z",    "X",   "C",     "V",     "B",   "_",             "N",      "M",     "Comma", "Dot",  "Slash",     "RShift",         "Up",             "_"],
+        ["LCtrl",     "LGui", "MO(1)",   "LAlt",  "Space", "_",   "_",       "_",    "MO(2)",     "_",     "PageUp",       "PageDown",         "Left",         "Down",           "Right"],    
+    ],
+
+    [
+        ["Delete",    "F1",  "F2", "F3",   "F4",   "F5", "F6",            "_",     "F7",   "F8",   "F9",     "F10",       "F11",        "F12",         "Backspace"],
+        ["Tab",       "_",    "_",   "_",     "_",     "_",   "_",            "_",     "_",     "_",     "_",       "_",         "LeftBracket",  "RightBracket",  "Backslash"],
+        ["CapsLock",   "_",    "_",   "_",     "_",     "_",   "_",        "_",      "_",     "_",     "_",       "Semicolon", "Quote",        "Enter",          "_"],
+        ["LShift",    "_",    "_",   "_",     "_",     "_",   "_",             "_",      "_",     "Comma", "Dot",  "Slash",     "RShift",         "Up",             "_"],
+        ["LCtrl",     "LGui", "MO(1)",   "LAlt",  "Space", "_",   "_",       "_",    "MO(2)",     "_",     "Home",       "End",         "Left",         "Down",           "Right"],      
+    ],
+
+    [
+        ["Escape",    "User0",  "User1", "User2",   "User3",   "User4", "User5",            "_",     "_",   "_",   "_",     "_",       "_",        "_",         "Delete"],
+        ["Tab",       "_",    "_",   "_",     "_",     "_",   "_",            "_",     "_",     "_",     "_",       "_",         "LeftBracket",  "RightBracket",  "Backslash"],
+        ["CapsLock",   "_",    "_",   "_",     "_",     "_",   "_",        "_",      "_",     "_",     "_",       "Semicolon", "Quote",        "Enter",          "_"],
+        ["LShift",    "_",    "_",   "_",     "_",     "_",   "_",             "_",      "_",     "Comma", "Dot",  "Slash",     "RShift",         "Up",             "_"],
+        ["LCtrl",     "LGui", "MO(1)",   "LAlt",  "Space", "_",   "_",       "_",    "MO(2)",     "_",     "Home",       "End",         "Left",         "Down",           "Right"],      
     ],
 ]
 
