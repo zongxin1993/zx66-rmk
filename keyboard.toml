@@ -17,11 +17,11 @@ cols = 15
 layers = 3
 keymap = [
     [
-        ["Escape",    "Kc1",  "Kc2", "Kc3",   "Kc4",   "Kc5", "Kc6",            "_",     "Kc7",   "Kc8",   "Kc9",     "Kc0",       "Minus",        "Equal",         "Backspace"],
-        ["Tab",       "Q",    "W",   "E",     "R",     "T",   "Y",            "_",     "U",     "I",     "O",       "P",         "LeftBracket",  "RightBracket",  "Backslash"],
-        ["CapsLock",   "A",    "S",   "D",     "F",     "G",   "_",        "H",      "J",     "K",     "L",       "Semicolon", "Quote",        "Enter",          "_"],
-        ["LShift",    "Z",    "X",   "C",     "V",     "B",   "_",             "N",      "M",     "Comma", "Dot",  "Slash",     "RShift",         "Up",             "_"],
-        ["LCtrl",     "LGui", "MO(1)",   "LAlt",  "Space", "_",   "_",       "_",    "MO(2)",     "_",     "PageUp",       "PageDown",         "Left",         "Down",           "Right"],    
+        ["Escape",    "Kc1",  "Kc2",    "Kc3",   "Kc4",   "Kc5", "Kc6",     "_",   "Kc7",   "Kc8",   "Kc9",     "Kc0",       "Minus",        "Equal",         "Backspace" ],
+        ["Tab",       "Q",    "W",      "E",     "R",     "T",   "Y",       "_",   "U",     "I",     "O",       "P",         "LeftBracket",  "RightBracket",  "Backslash" ],
+        ["CapsLock",  "A",    "S",      "D",     "F",     "G",   "_",       "H",   "J",     "K",     "L",       "Semicolon", "Quote",        "Enter",         "_"         ],
+        ["LShift",    "Z",    "X",      "C",     "V",     "B",   "_",       "N",   "M",     "Comma", "Dot",     "Slash",     "RShift",       "Up",            "_"         ],
+        ["LCtrl",     "LGui", "MO(1)",  "LAlt",  "Space", "_",   "_",       "_",   "MO(2)", "_",     "PageUp",  "PageDown",  "Left",         "Down",          "Right"     ],    
     ],
 
     [
