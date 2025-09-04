@@ -1,6 +1,6 @@
 [keyboard]
 name = "ZX66 RMK Keyboard"
-product_name = "ZX RMK Keyboard"
+product_name = "RMK Keyboard"
 vendor_id = 0xFEED
 product_id = 0x9527
 manufacturer = "Zongxin"
@@ -17,30 +17,38 @@ clear_storage = true
 [layout]
 rows = 5
 cols = 15
-layers = 3
+layers = 4
 keymap = [
     [
         ["Escape",    "Kc1",  "Kc2",    "Kc3",   "Kc4",   "Kc5", "Kc6",      "No",   "Kc7",   "Kc8",   "Kc9",     "Kc0",       "Minus",        "Equal",         "Backspace" ],
         ["Tab",       "Q",    "W",      "E",     "R",     "T",   "Y",        "No",   "U",     "I",     "O",       "P",         "LeftBracket",  "RightBracket",  "Backslash" ],
         ["CapsLock",  "A",    "S",      "D",     "F",     "G",   "No",       "H",    "J",     "K",     "L",       "Semicolon", "Quote",        "Enter",         "No"         ],
-        ["LShift",    "Z",    "X",      "C",     "V",     "B",   "No",       "N",    "M",     "Comma", "Dot",     "Slash",     "RShift",       "Up",            "Home"      ],
-        ["LCtrl",     "LGui", "MO(1)",  "LAlt",  "Space", "No",  "No",       "No",   "MO(2)", "No",    "PageUp",  "PageDown",  "Left",         "Down",          "Right"     ],    
+        ["LShift",    "Z",    "X",      "C",     "V",     "B",   "No",       "N",    "M",     "Comma", "Dot",     "Slash",     "RShift",       "Up",            "MO(3)"      ],
+        ["LCtrl",     "LGui", "MO(1)",  "LAlt",  "Space", "No",  "No",       "No",   "MO(2)", "No",    "PageUp",  "Home",      "Left",         "Down",          "Right"     ],    
     ],
 
     [
-        ["Delete",    "F1",  "F2", "F3",   "F4",   "F5", "F6",            "No",     "F7",   "F8",   "F9",     "F10",       "F11",        "F12",         "Backspace"],
-        ["Tab",       "_",    "_",   "_",     "_",     "_",   "No",            "No",     "_",     "_",     "_",       "_",         "LeftBracket",  "RightBracket",  "Backslash"],
-        ["CapsLock",   "_",    "_",   "_",     "_",     "_",   "No",        "_",      "_",     "_",     "_",       "Semicolon", "Quote",        "Enter",          "No"],
-        ["LShift",    "_",    "_",   "_",     "_",     "_",   "No",             "_",      "_",     "Comma", "Dot",  "Slash",     "RShift",         "Up",             "End"],
-        ["LCtrl",     "LGui", "MO(1)",   "LAlt",  "Space", "_",   "No",       "No",    "MO(2)",     "No",     "Home",       "End",         "Left",         "Down",           "Right"],      
+        ["Delete",    "F1",   "F2",    "F3",    "F4",    "F5",  "F6",       "No",  "F7",    "F8",             "F9",             "F10",             "F11",            "F12",           "Delete"],
+        ["Tab",       "_",    "_",     "_",     "_",     "_",   "_",        "No",  "_",     "_",              "_",              "_",               "AudioVolUp",     "AudioVolDown",  "AudioMute"],
+        ["CapsLock",  "_",    "_",     "_",     "_",     "_",   "No",       "_",   "_",     "_",              "_",              "BrightnessUp",    "BrightnessDown", "Enter",         "No"],
+        ["LShift",    "_",    "_",     "_",     "_",     "_",   "No",       "_",   "_",     "MediaPrevTrack", "MediaNextTrack", "MediaPlayPause",  "RShift",         "Up",            "MO(3)"],
+        ["LCtrl",     "LGui", "MO(1)", "LAlt",  "Space", "_",   "No",       "No",  "MO(2)", "No",             "PageDown",       "End",             "Left",           "Down",          "Right"],      
     ],
 
     [
-        ["Escape",    "User0",  "User1", "User2",   "User3",   "User4", "User5",            "No",     "_",   "_",   "_",     "_",       "_",        "_",         "Delete"],
-        ["Tab",       "_",    "_",   "_",     "_",     "_",   "_",            "_",     "No",     "_",     "_",       "_",         "LeftBracket",  "RightBracket",  "Backslash"],
-        ["CapsLock",   "_",    "_",   "_",     "_",     "_",   "_",        "No",      "_",     "_",     "_",       "Semicolon", "Quote",        "Enter",          "No"],
-        ["LShift",    "_",    "_",   "_",     "_",     "_",   "_",             "No",      "_",     "Comma", "Dot",  "Slash",     "RShift",         "Up",             "_"],
-        ["LCtrl",     "LGui", "MO(1)",   "LAlt",  "Space", "_",   "No",       "No",    "MO(2)",     "No",     "Home",       "End",         "Left",         "Down",           "Right"],      
+        ["Grave",     "_",    "_",     "_",     "_",     "_",   "_",        "No",  "_",     "_",   "_",     "_",    "_",     "_",    "_"],
+        ["Tab",       "_",    "_",     "_",     "_",     "_",   "_",        "No",  "_",     "_",   "_",     "_",    "_",     "_",    "_"],
+        ["CapsLock",  "_",    "_",     "_",     "_",     "_",   "No",       "_",   "_",     "_",   "_",     "_",    "_",     "Enter","No"],
+        ["LShift",    "_",    "_",     "_",     "_",     "_",   "No",       "_",   "_",     "_",   "_",     "_",    "RShift","Up",   "MO(3)"],
+        ["LCtrl",     "LGui", "MO(1)", "LAlt",  "Space", "_",   "No",       "No",  "MO(2)", "No",  "_",     "_",    "Left",  "Down", "Right"],      
+    ],
+
+    [
+        ["Escape",    "User0","User1", "User2", "User3", "User4", "User5",    "No",  "_",    "_",  "_",  "_", "_",     "_",    "_"],
+        ["Tab",       "_",    "_",     "_",     "_",     "_",     "_",        "No",  "_",    "_",  "_",  "_", "_",     "_",    "_"],
+        ["CapsLock",  "_",    "_",     "_",     "_",     "_",     "No",       "_",   "_",    "_",  "_",  "_", "_",     "Enter","No"],
+        ["LShift",    "_",    "_",     "_",     "_",     "_",     "No",       "_",   "_",    "_",  "_",  "_", "RShift","Up",   "MO(3)"],
+        ["LCtrl",     "LGui", "MO(1)", "LAlt",  "Space", "_",     "No",       "No",  "MO(2)","No", "_",  "_", "Left",  "Down", "Right"],      
     ],
 ]
 
@@ -53,8 +61,8 @@ col_offset = 0
 
 [split.central.matrix]
 matrix_type = "normal"
-input_pins = ["P1_13", "P0_02", "P0_29", "P0_30", "P1_11"]
-output_pins = ["P1_10", "P0_03", "P0_28","P0_31", "P0_20","P0_09","P0_10"]
+input_pins = ["P0_10", "P1_06", "P0_09", "P1_04", "P0_02"]
+output_pins = ["P1_13", "P1_02", "P1_10","P0_29", "P0_31","P0_30","P0_05"]
 
 [[split.peripheral]]
 rows = 5
@@ -64,5 +72,5 @@ col_offset = 7
 
 [split.peripheral.matrix]
 matrix_type = "normal"
-input_pins = ["P1_13", "P0_02", "P0_29", "P0_30", "P1_11"]
-output_pins = ["P1_10","P0_03", "P0_28", "P0_10","P0_20", "P0_13","P0_24","P0_09"]
+input_pins = ["P0_10", "P1_06", "P0_09", "P1_04", "P0_02"]
+output_pins = ["P1_13", "P1_02", "P1_10","P0_29", "P0_31","P0_30","P0_05","P1_09"]
