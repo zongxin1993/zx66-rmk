@@ -74,3 +74,16 @@ col_offset = 7
 matrix_type = "normal"
 input_pins = ["P0_10", "P1_06", "P0_09", "P1_04", "P0_02"]
 output_pins = ["P1_13", "P1_02", "P1_10","P0_29", "P0_31","P0_30","P0_05","P1_09"]
+
+[ble]
+enabled = true
+# vddh has an internal voltage divider
+battery_adc_pin = "vddh"
+# Or
+# battery_adc_pin = "P0_04"
+# adc_divider_measured = 2000
+# adc_divider_total = 2806
+charge_state.pin = "P1_11"
+charge_state.low_active = false
+charge_led.pin = "P0_28"
+charge_led.low_active = false
