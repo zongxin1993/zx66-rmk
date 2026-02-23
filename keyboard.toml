@@ -5,7 +5,7 @@ vendor_id = 0xFEED
 product_id = 0x9527
 manufacturer = "Zongxin"
 chip = "nrf52840"
-# usb_enable = true
+usb_enable = true
 
 [split]
 connection = "ble"
@@ -23,8 +23,8 @@ keymap = [
     [
         ["Escape",    "Kc1",  "Kc2",    "Kc3",   "Kc4",   "Kc5",    "Kc6",      "No",   "Kc7",   "Kc8",   "Kc9",     "Kc0",       "Minus",        "Equal",         "Backspace" ],
         ["Tab",       "Q",    "W",      "E",     "R",     "T",      "Y",        "No",   "U",     "I",     "O",       "P",         "LeftBracket",  "RightBracket",  "Backslash" ],
-        ["CapsLock",  "A",    "S",      "D",     "F",     "G",      "No",       "H",    "J",     "K",     "L",       "Semicolon", "Quote",        "Enter",         "No"         ],
-        ["LShift",    "Z",    "X",      "C",     "V",     "B",      "No",       "N",    "M",     "Comma", "Dot",     "Slash",     "RShift",       "Up",            "MO(3)"      ],
+        ["CapsLock",  "A",    "S",      "D",     "F",     "G",      "No",       "H",    "J",     "K",     "L",       "Semicolon", "Quote",        "Enter",         "No"        ],
+        ["LShift",    "Z",    "X",      "C",     "V",     "B",      "No",       "N",    "M",     "Comma", "Dot",     "Slash",     "RShift",       "Up",            "MO(3)"     ],
         ["LCtrl",     "LGui", "MO(1)",  "LAlt",  "No",    "Space",  "No",       "No",   "MO(2)", "No",    "PageUp",  "Home",      "Left",         "Down",          "Right"     ],    
     ],
 
@@ -37,19 +37,19 @@ keymap = [
     ],
 
     [
-        ["Grave",     "_",    "_",     "_",     "_",     "_",       "_",        "No",  "_",     "_",   "_",     "_",    "_",     "_",    "_"],
-        ["Tab",       "_",    "_",     "_",     "_",     "_",       "_",        "No",  "_",     "_",   "_",     "_",    "_",     "_",    "_"],
-        ["CapsLock",  "_",    "_",     "_",     "_",     "_",       "No",       "_",   "_",     "_",   "_",     "_",    "_",     "Enter","No"],
-        ["LShift",    "_",    "_",     "_",     "_",     "_",       "No",       "_",   "_",     "_",   "_",     "_",    "RShift","Up",   "MO(3)"],
-        ["LCtrl",     "LGui", "MO(1)", "LAlt",  "No",    "Space",   "No",       "No",  "MO(2)", "No",  "_",     "_",    "Left",  "Down", "Right"],      
+        ["Grave",     "_",    "_",     "_",     "_",     "_",       "_",        "No",  "_",     "_",   "_",     "_",    "_",       "_",      "_"    ],
+        ["Tab",       "_",    "_",     "_",     "_",     "_",       "_",        "No",  "_",     "_",   "_",     "_",    "_",       "_",      "_"    ],
+        ["CapsLock",  "_",    "_",     "_",     "_",     "_",       "No",       "_",   "_",     "_",   "_",     "_",    "_",       "Enter",  "No"   ],
+        ["LShift",    "_",    "_",     "_",     "_",     "_",       "No",       "_",   "_",     "_",   "_",     "_",    "RShift",  "Up",     "MO(3)"],
+        ["LCtrl",     "LGui", "MO(1)", "LAlt",  "No",    "Space",   "No",       "No",  "MO(2)", "No",  "_",     "_",    "Left",    "Down",   "Right"],      
     ],
 
     [
-        ["Escape",    "User0","User1", "User2", "User3", "User4",   "User5",    "No",  "_",    "_",  "_",  "_", "_",     "_",    "_"],
-        ["Tab",       "_",    "_",     "_",     "_",     "_",       "_",        "No",  "_",    "_",  "_",  "_", "_",     "_",    "_"],
-        ["CapsLock",  "_",    "_",     "_",     "_",     "_",       "No",       "_",   "_",    "_",  "_",  "_", "_",     "Enter","No"],
-        ["LShift",    "_",    "_",     "_",     "_",     "_",       "No",       "_",   "_",    "_",  "_",  "_", "RShift","Up",   "MO(3)"],
-        ["LCtrl",     "LGui", "MO(1)", "LAlt",  "No",    "Space",   "No",       "No",  "MO(2)", "No", "_",  "_", "Left",  "Down", "Right"],      
+        ["Escape",    "User0","User1", "User2", "User3", "User4",   "User5",    "No",  "_",      "_",  "_",  "_",   "_",       "_",       "_"],
+        ["Tab",       "_",    "_",     "_",     "_",     "_",       "_",        "No",  "_",      "_",  "_",  "_",   "_",       "_",       "_"],
+        ["CapsLock",  "_",    "_",     "_",     "_",     "_",       "No",       "_",   "_",      "_",  "_",  "_",   "_",       "Enter",   "No"],
+        ["LShift",    "_",    "_",     "_",     "_",     "_",       "No",       "_",   "_",      "_",  "_",  "_",   "RShift",  "Up",      "MO(3)"],
+        ["LCtrl",     "LGui", "MO(1)", "LAlt",  "No",    "Space",   "No",       "No",  "MO(2)",  "No", "_",  "_",   "Left",    "Down",    "Right"],      
     ],
 ]
 
