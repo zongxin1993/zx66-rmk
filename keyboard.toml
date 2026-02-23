@@ -12,7 +12,7 @@ connection = "ble"
 
 [storage]
 enabled = true
-clear_storage = true
+# clear_storage = true
 
 
 [layout]
